@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class calculator {
@@ -6,7 +5,6 @@ public class calculator {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите выражение:");
         String input = scan.nextLine();
-        scan.close();
         System.out.println(calc(input));
     }
     public static String calc(String input) throws ScannerException {
@@ -54,16 +52,19 @@ public class calculator {
                 case "-" -> a - b;
                 case "*" -> a * b;
                 default -> a / b;
+
             };
             if (isRoman) {
-                System.out.println(convert.IntToRoman(result));}
+                input=convert.IntToRoman(result);}
+
             else {
-                System.out.println(result);
+                input=(String.valueOf(result));
             }
         } else {
             throw new ScannerException("т.к. используются одновременно разные системы счисления");
         }
       return input;
+
     }
 }
 
