@@ -4,7 +4,7 @@ import java.util.TreeMap;
     TreeMap<Character, Integer> romanKeyMap = new TreeMap<>();
     TreeMap<Integer, String> arabKeyMap = new TreeMap<>();
     public romanNum() {
-        romanKeyMap.put('I', 1);
+        romanKeyMap.put('I', 11);
         romanKeyMap.put('V', 5);
         romanKeyMap.put('X', 10);
         romanKeyMap.put('L', 50);
